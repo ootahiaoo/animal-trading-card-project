@@ -1,12 +1,11 @@
-
 .blueline {
-	color: blue;
+    color: blue;
 }
 .row {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .rowchild {
-	margin: 1em;
-	flex: 1;
+    margin: 1em;
+    flex: 1;
 }
