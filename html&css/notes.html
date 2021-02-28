@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML class notes</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine:bold|Inconsolata|Droid+Sans">
+</head>
+<body>
+<h1>HTML class notes</h1>
+
+<p class="blueline"  style="font-family: Inconsolata"> <strong> HTTP </strong> <em>(Hypertext Transfer Protocol)</em>: rules for how requests and responses work (tells the browser how to talk to the server)
+<br> <em> HTTPS (Hypertext Transfer Protocol Secure) </em>
+
+<hr>
+<p> <mark> HTML (Hypertext Markup Language) </mark> is made of Text, Markup and References.
+
+<ul> 
+	<li><em> Markup </em>: tells the browser what the text should look like or how it's arranged
+	<li><em>References </em>: used to include/link to other documents and files
+	<li><em> Whitespace </em> : spaces, tabs, line breaks
+</ul>
+
+<p> <strong> Void element (empty element) </strong> : HTML element with <sup> no context</sup> & <sub> no closing tag</sub>
+
+<div class="row">
+<div class="rowchild">
+<p> <strong> Headlines/Section headings </strong> use the following tags:
+<ol>
+	<li> h1 (biggest size)
+	<li> h2
+	<li> h3
+	<li> h4
+	<li> h5
+	<li> h6 (smallest size)
+</ol>
+
+
+<p> <mark> Block elements </mark> form a view, while <mark> Inline elements </mark> don't.
+</div>
+
+<div class="rowchild">
+<h3> Lists </h3>
+<p> <ul> 
+		<li> The lists either ordered or unordered. 
+			<ol>
+				<li> <em> ordered lists </em> start with a number
+				<li> <em> unordered lists</em> start with dots or bullets
+ 			</ol>
+		<li> The tag inside doesn't need a closing tag.
+		<li> The lists can be nested.
+	</ul>
+</div>
+</div>
+
+<h3> Links</h3> 
+<p> <em> URL:</em> Uniform Resource Locator
+	<ul>
+		<li> When using the a tag, must use a <em> fully qualified url </em> (or <em> absolute url</em>)
+		<li> A stands for anchor
+		<li> The attribute of the anchor tag is <em> href </em>, which stands for hypertext reference.
+	</ul>
+<p> Example: <a href="http://github.com"> Github </a>
+
+
+<h3> Images </h3>
+<p> 
+	<ul>
+	    <li> Needs 2 attributes
+	    	<ol>
+	    		<li> <strong> src</strong> (source), the address of the image
+	    		<li> <strong> alt</strong> (alternate text), the text displayed if the user can't see the image or the image is not displayed
+	    	</ol>
+	    <li> Can use <strong> Relative URL </strong> if the file is in the same local directory (URLs with no "://" will be treated as relative URL)
+	    <li> Is an empty element
+	    <li> Is an inline element
+	</ul>
+<p> Example:
+	<br> <img src="https://placebear.com/300/300" alt="Picture of a bear">
+
+<h3> HTML page structure </h3>
+<p> 
+	<ul> 
+		<li> Needs a <strong>DOCTYPE</strong> tag at the top of the page (if there isn't, the browser will use quircks mode to try to be compatible with older HTML versions)
+			<li> Should specify the <strong> head </strong> and <strong> body </strong> (although it can be guessed)
+				<ul>
+					<li> Inside the head: the title, style, script and other metadata
+					<li> Inside the body: the actual contents of the page
+				</ul>
+			<li> Best to specify the language used in the <strong> html </strong> tag (for accessibility)
+	</ul>
+
+</body>
+</html>
